@@ -17,7 +17,7 @@ void handle_signal(int signum)
     for (int i = 0; i < num_processes; ++i)
     {
         kill(processes[i], SIGKILL); 
-        printf("Process %d killed\n", processes[i]);
+        printf("\nProcess %d killed", processes[i]);
     }
     exit(0); 
 }
